@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/requester.css">
+  <title>Pending Requests</title>
+</head>
+<body>
+    <div class="header">
+        <h1 class="title">Mosyn</h1>
+        <button class="logout-button" id="logout-button">Logout</button>
+    </div>
+
+  <div class="container">
+    <h1>Pending Requests</h1>
+    <ul class="request-list" id="requestList">
+      <!-- Requests will be added here dynamically using JavaScript -->
+    </ul>
+  </div>
+
+  <div class="popup" id="popup">
+    <div class="popup-content">
+      <button class="close-button" id="closeButton">&times;</button>
+      <h2 class="workflow-type" id="workflowType">Workflow Type</h2>
+      <p class="description" id="description">Description</p>
+      <div class="attachments" id="attachments">
+        <!-- Attachments links will be added here dynamically using JavaScript -->
+      </div>
+      <p class="description" id="statusText" style="color: blue;">Status</p>
+    </div>
+  </div>
+
+  <div class="floating-button" id="createRequestButton">+</div>
+  <div class="popup" id="createRequestPopup">
+    <div class="popup-content">
+    <button class="close-button" id="closeButton2">&times;</button>  
+    <p class="description">Workflow type:</p>
+    <select id="workflowTypeDropdown"></select>
+    <p class="description">Description:</p>
+      <textarea id="descriptionInput" placeholder="Description"></textarea>
+      <p class="description">Attachments:</p>
+      <input type="file" id="attachmentInput">
+      <div class="popup-buttons">
+      <button class="submitButton" id="submitButton">Submit</button>
+    </div>
+  </div></div>
+
+  <script src="assets/js/requester.js"></script>
+</body>
+</html>

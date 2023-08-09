@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="assets/css/login.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mosyn Login</title>
+    <script src="assets/js/login.js"></script>
+
+</head>
+<body>
+    <div id="l-form" class="l-s-form">
+        <h3 align="centre">Welcome to <div class="a-logo">Mosyn</div></h3>
+        <p class="l-s-form-light-text">Login</p>
+        <form onsubmit="return false">
+            <input type="text" name="u" placeholder="e-mail" required="required" id="email_input_login" />
+            <input type="password" name="p" placeholder="Password" required="required" id="password_input_login" />
+            <button class="btn btn-primary btn-block btn-large" onclick="login()">Login</button>
+        </form>
+        <br>
+        <a onclick="forget_pass()" style="color: #6eb6de;"><u>Forget Password?</u></a>
+        <br>
+    </div>
+
+    <div id="l-forgot" hidden = "true" class="l-s-form">
+      <h1>Reset Password</h1>
+      <h3>Enter your email below, get a reset link through your mailbox</h3>
+      <input type="text" name="u" placeholder="e-mail" required="required" id="email_input_reset" />
+      <button class="btn btn-primary btn-block btn-large" onclick="reset()">Reset Password</button>
+    </div>
+
+    <div class="footer">
+      <p class="footer-text">View on <a href="https://github.com/inboxsgk/VITogether" style="color: white;">GitHub</a></p>
+    </div>
+
+  </body>
+ 
+</html>
