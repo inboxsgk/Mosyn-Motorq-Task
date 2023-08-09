@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/admin.css">
+    <title>Admin Panel</title>
+</head>
+<body>
+    <div class="header">
+        <h1 class="title">Admin Panel</h1>
+        <button class="action-button" id="createWorkflowButton">Create Workflow</button>
+        <button class="action-button" id="viewStatisticsButton">View Statistics</button>
+        <button class="action-button" id="changeRolesButton">Change Roles</button>
+        <button class="logout-button" id="logout-button">Logout</button>
+    </div>
+    <div class="popup" id="createWorkflowPopup">
+      <div class="popup-content">
+        <button class="close-button" id="closeButton">&times;</button>
+        <h2>Create New Workflow</h2>
+        <label for="workflowName">Workflow Name:</label>
+        <input type="text" id="workflowName">
+        <label for="approvers">Approvers:</label>
+        <textarea id="approvers"></textarea>
+        <div class="popup-buttons">
+        <button class="submit-button" id="createWorkflowSubmitButton">Submit</button>
+      </div>
+      </div>
+  </div>
+    <div class="popup" id="viewStatisticsPopup">
+      <div class="popup-content">
+        <button class="close-button" id="statCloseButton">&times;</button>
+        <h2>View Statistics</h2>
+        <p id="statisticsData"></p>
+    </div>
+  </div>
+
+  
+  <div class="container">
+    <h1>Active Requests</h1>
+    <ul class="request-list" id="requestList">
+      <!-- Requests will be added here dynamically using JavaScript -->
+    </ul>
+  </div>
+
+
+
+    <script src="assets/js/admin.js"></script>
+</body>
+</html>
